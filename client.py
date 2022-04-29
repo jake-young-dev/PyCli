@@ -1,6 +1,6 @@
 #imports
 import http.client
-import json, gzip
+#import json
 from urllib.parse import urlparse
 
 #path;parameters?query#fragment
@@ -90,13 +90,13 @@ def post(url, port, body):
 
 
 
-status, body = get("http://localhost/", 8080)
+# status, body = get("http://localhost/", 8080)
 
-status, body = get("https://www.google.com", None)
+# status, body = get("https://www.google.com", None)
 
-status, body = get("https://stackoverflow.com/", None)
+# status, body = get("https://stackoverflow.com/", None)
 
-status, body = get("http://www.github.com/", None)
+# status, body = get("http://www.github.com/", None)
 
-data = json.dumps({"playlist": "https://www.youtube.com/playlist?list=PL5WG4doTSrXSzrzgMa2HiLdqOnlBynVEH"})
-status, body = post("http://localhost/playlist", 8080, data)
+# data = json.dumps({"playlist": "https://www.youtube.com/playlist?list=PL5WG4doTSrXSzrzgMa2HiLdqOnlBynVEH"})
+# status, body = post("http://localhost/playlist", 8080, data)
