@@ -6,6 +6,7 @@ setup(
    description='A Python API Client',
    author='jake-young-dev',
    author_email='jake.young.dev@gmail.com',
-   packages=['PyCli'],
+   packages=['PyCli'], 
+   install_requires=[], 
    scripts=["client.py"]
 )
