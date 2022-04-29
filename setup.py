@@ -2,11 +2,10 @@ from setuptools import setup
 
 setup(
    name='PyCli',
-   version='1.0',
+   version='1.1',
    description='A Python API Client',
    author='jake-young-dev',
-   author_email='',
-   packages=['PyCli'],  #same as name
-   install_requires=[], #external packages as dependencies
+   author_email='jake.young.dev@gmail.com',
+   packages=['PyCli'],
    scripts=["client.py"]
 )
