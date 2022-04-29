@@ -7,6 +7,5 @@ setup(
    author='jake-young-dev',
    author_email='jake.young.dev@gmail.com',
    packages=['PyCli'], 
-   install_requires=[], 
-   #scripts=["client.py"]
+   install_requires=[]
 )

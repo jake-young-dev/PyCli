@@ -6,8 +6,6 @@ from urllib.parse import urlparse
 #path;parameters?query#fragment
 
 def get(url, port):
-    # print()
-    # print("Requesting: " + url)
 
     link = urlparse(url)
 
@@ -34,8 +32,6 @@ def get(url, port):
     connection.request("GET", reqPath)
     res = connection.getresponse()
 
-    # print(str(res.status) + " " + res.reason)
-
     if res.status == 301:
         newurl = res.getheader("Location")
         print("Redirected to: " + newurl)
@@ -46,7 +42,7 @@ def get(url, port):
     try:
         body = checkpoint.decode()
     except UnicodeDecodeError:
-        # print("Decode error, returning raw body")
+        #error decoding, returning raw
         body = checkpoint
     connection.close()
 
@@ -54,8 +50,6 @@ def get(url, port):
 
 
 def post(url, port, body):
-    # print()
-    # print("Posting to: " + url)
     
     link = urlparse(url)
 
@@ -82,7 +76,6 @@ def post(url, port, body):
     connection.request("POST", reqPath, body)
     res = connection.getresponse()
 
-    # print(str(res.status) + " " + res.reason)
     body = str(res.read().decode())
     connection.close()
 
