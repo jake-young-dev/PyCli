@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 
 #path;parameters?query#fragment
 
-def get(url, port):
+def get(url, port = None):
 
     link = urlparse(url)
 
@@ -49,7 +49,7 @@ def get(url, port):
     return str(res.status) + " " + res.reason, body
 
 
-def post(url, port, body):
+def post(url, body, port = None):
     
     link = urlparse(url)
 
