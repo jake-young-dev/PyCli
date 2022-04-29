@@ -8,4 +8,5 @@ setup(
    author_email='',
    packages=['PyCli'],  #same as name
    install_requires=[], #external packages as dependencies
+   scripts=["client.py"]
 )
