@@ -33,4 +33,6 @@ from PyCli.client import get, post
 status, body = get(https://www.google.com) 
 
 Port can be supplied as second argument if needed.
+
+status, body = get('http://localhost/, 3000)
 ```
