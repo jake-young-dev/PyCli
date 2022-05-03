@@ -46,7 +46,7 @@ def get(url, port = None):
         body = checkpoint
     connection.close()
 
-    return str(res.status) + " " + res.reason, body
+    return res.status, body
 
 
 def post(url, body, port = None):
@@ -79,4 +79,4 @@ def post(url, body, port = None):
     body = str(res.read().decode())
     connection.close()
 
-    return str(res.status) + " " + res.reason, body
+    return res.status, body
